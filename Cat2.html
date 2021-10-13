@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Register</title>
+<link rel='stylesheet' href='Cat2.css' type='text/css' />
+<script src="Cat2.js"></script>
+<script type="text/javascript" src="Cat2_1.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+	
+	 <div class="wrapper">
+
+        <h2 id="hid">Registration</h2>
+        <div id="success" class="suc"><h2>Form has been submitted successfully!<br>
+       
+        </h2></div>
+        <div id="error_message"></div>
+        <form id="myform" name="form" onsubmit="return val()">
+            <div class="input_field">
+                <input type="text" placeholder="UserName" id="name" name="username">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Name" id="name" name="name">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Email" id="email" name="email">
+            </div>
+            <div class="input_field">
+                <input type="password" placeholder="Password" id="pass" name="password">
+            </div>
+            <div class="input_field">
+                <input type="password" placeholder="Confirm Password" id="cpass">
+            </div>
+            
+            <div class="input_field">
+                <input type="text" placeholder="College Name" id="college" name="college">
+            </div>
+             <div class="input_field">
+                <input type="text" placeholder="State" id="state" name="state">
+            </div>
+<div class="input_field">
+            <textarea name="desc" id="desc" placeholder="Address" name="address"></textarea>
+        </div>
+             <div class="input_field">
+                <input type="text" placeholder="Age" id="age" name="age">
+            </div>
+
+             <div class="input_field">
+                <input type="text" placeholder="Phone Number" id="phone" pattern="[1-9]{1}[0-9]{9}" name="phone">
+            </div>
+<div class="input_field">
+            	<details>
+	<summary>Select Branch</summary>
+	<ul>
+		<li>MCS</li>
+		<li>MCA </li>
+		<li>BCA</li>
+		<li>BSC</li>
+		
+	</ul>
+</details>
+            </div>
+             
+            <input type="submit" value="submit" onclick="return val()">
+            <button onclick="download(this.form)" id="submitButton">View Data</button>
+        </form>
+    </div>
+</body>
+</html>
